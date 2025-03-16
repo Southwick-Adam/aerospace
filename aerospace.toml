@@ -3,7 +3,7 @@ start-at-login = true
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
 
-accordion-padding = 30
+accordion-padding = 15
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -13,6 +13,7 @@ key-mapping.preset = 'qwerty'
 
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 on-focus-changed = ['move-mouse window-lazy-center']
+
 
 [gaps]
 inner.horizontal = 5
@@ -24,7 +25,6 @@ outer.right =      5
 
 
 [mode.main.binding]
-
 ctrl-shift-alt-semicolon = 'layout tiles horizontal vertical'
 ctrl-shift-alt-comma = 'layout accordion horizontal vertical'
 
@@ -38,29 +38,38 @@ ctrl-shift-alt-cmd-e = 'move down'
 ctrl-shift-alt-cmd-u = 'move up'
 ctrl-shift-alt-cmd-i = 'move right'
 
-ctrl-alt-shift-0 = 'resize smart -50'
-ctrl-alt-shift-equal = 'resize smart +50'
+ctrl-alt-shift-l = 'resize smart -50'
+ctrl-alt-shift-y = 'resize smart +50'
 
-ctrl-shift-alt-1 = 'workspace 1'
-ctrl-shift-alt-2 = 'workspace 2'
-ctrl-shift-alt-3 = 'workspace 3'
-ctrl-shift-alt-4 = 'workspace 4'
-ctrl-shift-alt-5 = 'workspace 5'
-ctrl-shift-alt-6 = 'workspace 6'
-ctrl-shift-alt-7 = 'workspace 7'
-ctrl-shift-alt-8 = 'workspace 8'
-ctrl-shift-alt-9 = 'workspace 9'
+ctrl-shift-alt-a = 'workspace 1'
+ctrl-shift-alt-r = 'workspace 2'
+ctrl-shift-alt-s = 'workspace 3'
+ctrl-shift-alt-t = 'workspace 4'
+ctrl-shift-alt-q = 'workspace 5'
+ctrl-shift-alt-w = 'workspace 6'
+ctrl-shift-alt-f = 'workspace 7'
+ctrl-shift-alt-p = 'workspace 8'
 
-ctrl-shift-alt-cmd-1 = 'move-node-to-workspace 1'
-ctrl-shift-alt-cmd-2 = 'move-node-to-workspace 2'
-ctrl-shift-alt-cmd-3 = 'move-node-to-workspace 3'
-ctrl-shift-alt-cmd-4 = 'move-node-to-workspace 4'
-ctrl-shift-alt-cmd-5 = 'move-node-to-workspace 5'
-ctrl-shift-alt-cmd-6 = 'move-node-to-workspace 6'
-ctrl-shift-alt-cmd-7 = 'move-node-to-workspace 7'
-ctrl-shift-alt-cmd-8 = 'move-node-to-workspace 8'
-ctrl-shift-alt-cmd-9 = 'move-node-to-workspace 9'
+ctrl-shift-alt-cmd-a = 'move-node-to-workspace 1'
+ctrl-shift-alt-cmd-r = 'move-node-to-workspace 2'
+ctrl-shift-alt-cmd-s = 'move-node-to-workspace 3'
+ctrl-shift-alt-cmd-t = 'move-node-to-workspace 4'
+ctrl-shift-alt-cmd-q = 'move-node-to-workspace 5'
+ctrl-shift-alt-cmd-w = 'move-node-to-workspace 6'
+ctrl-shift-alt-cmd-f = 'move-node-to-workspace 7'
+ctrl-shift-alt-cmd-p = 'move-node-to-workspace 8'
 
 ctrl-shift-alt-tab = 'workspace-back-and-forth'
 ctrl-shift-alt-cmd-tab = 'move-workspace-to-monitor --wrap-around next'
 
+[workspace_assignments]
+"Google Chrome" = 1
+"Visual Studio Code" = 4
+Slack = 3
+Terminal = 4
+"Microsoft Excel" = 5
+QGIS = 5
+Finder = 6
+Notes = 7
+Messages = 8
+Spotify = 8
