@@ -26,7 +26,6 @@ outer.right =      5
 
 [mode.main.binding]
 ctrl-shift-alt-semicolon = 'layout tiles horizontal vertical'
-ctrl-shift-alt-comma = 'layout accordion horizontal vertical'
 
 ctrl-shift-alt-n = 'focus left'
 ctrl-shift-alt-e = 'focus down'
@@ -79,6 +78,8 @@ ctrl-shift-alt-cmd-8 = 'move-node-to-workspace 8'
 
 ctrl-shift-alt-tab = 'workspace-back-and-forth'
 ctrl-shift-alt-cmd-tab = 'move-workspace-to-monitor --wrap-around next'
+
+ctrl-shift-alt-m = "join-with left"
 
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
